@@ -1,3 +1,5 @@
 # Dependency directories
 node_modules/
 jspm_packages/
+template.md
+README.md
