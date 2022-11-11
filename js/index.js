@@ -37,7 +37,12 @@ const questions = [
   {
     name: "emailAddress",
     type: "input",
-    message: "Provide your github repository address.",
+    message: "Provide your email address.",
+  },
+  {
+    name: "gitRepo",
+    type: "input",
+    message: "Provide your github repo address.",
   },
   {
     name: "license",
@@ -69,6 +74,7 @@ inquirer.prompt(questions).then(
     usage,
     contribution,
     test,
+    gitRepo,
     emailAddress,
     license,
   }) => {
@@ -79,6 +85,7 @@ inquirer.prompt(questions).then(
       usage,
       contribution,
       test,
+      gitRepo,
       emailAddress,
       license
     );

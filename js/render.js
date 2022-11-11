@@ -363,6 +363,7 @@ function renderFile(
   contribution,
   test,
   emailAddress,
+  gitRepo,
   license
 ) {
   handleLicense(license);
@@ -388,9 +389,11 @@ ${usage}
 
 ## Questions
 
-If you have any questions about this application send me a message on github.
+If you have any questions about this application send me an email or message on github.
 
-My repo URL is : ${emailAddress}
+My email address is:  [${emailAddress}](mailto:${emailAddress})
+
+My repo URL is: [${gitRepo}](${gitRepo})
 
 ## How to Contribute
 ${contribution}
