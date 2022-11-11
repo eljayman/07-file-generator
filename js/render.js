@@ -362,8 +362,8 @@ function renderFile(
   usage,
   contribution,
   test,
-  emailAddress,
   gitRepo,
+  emailAddress,
   license
 ) {
   handleLicense(license);
@@ -403,11 +403,7 @@ ${test}
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+This application was made to run in [node.js](https://nodejs.org/) and used [inquirer 8.2.4](https://github.com/SBoudrias/Inquirer.js#readme) as a dependency to create the prompts
 
 ## License
 

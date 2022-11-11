@@ -74,8 +74,8 @@ inquirer.prompt(questions).then(
     usage,
     contribution,
     test,
-    gitRepo,
     emailAddress,
+    gitRepo,
     license,
   }) => {
     const contents = renderFile(
@@ -85,11 +85,11 @@ inquirer.prompt(questions).then(
       usage,
       contribution,
       test,
-      gitRepo,
       emailAddress,
+      gitRepo,
       license
     );
-    fs.writeFile("README.md", contents, (error) => {
+    fs.writeFile("../README.md", contents, (error) => {
       if (error) console.log(error);
     });
   },
