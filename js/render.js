@@ -1,5 +1,6 @@
 let badge;
 let licenseText;
+
 function handleLicense(license) {
   console.log("invoke :>>", license);
   switch (license) {
@@ -361,6 +362,7 @@ function renderFile(
   usage,
   contribution,
   test,
+  emailAddress,
   license
 ) {
   handleLicense(license);
@@ -383,6 +385,12 @@ ${installation}
 
 ## Usage
 ${usage}
+
+## Questions
+
+If you have any questions about this application send me a message on github.
+
+My repo URL is : ${emailAddress}
 
 ## How to Contribute
 ${contribution}

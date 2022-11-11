@@ -2,10 +2,6 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const { renderFile } = require("./render");
 
-// function renderFile(name) {
-//   return `#${name}`;
-// }
-
 const questions = [
   {
     name: "name",
@@ -39,6 +35,11 @@ const questions = [
     message: "Provide instructions on how to test the application.",
   },
   {
+    name: "emailAddress",
+    type: "input",
+    message: "Provide your github repository address.",
+  },
+  {
     name: "license",
     type: "list",
     message: "Select a license to use",
@@ -61,7 +62,16 @@ const questions = [
   // },
 ];
 inquirer.prompt(questions).then(
-  ({ name, description, installation, usage, contribution, test, license }) => {
+  ({
+    name,
+    description,
+    installation,
+    usage,
+    contribution,
+    test,
+    emailAddress,
+    license,
+  }) => {
     const contents = renderFile(
       name,
       description,
@@ -69,6 +79,7 @@ inquirer.prompt(questions).then(
       usage,
       contribution,
       test,
+      emailAddress,
       license
     );
     fs.writeFile("README.md", contents, (error) => {
