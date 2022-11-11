@@ -38,6 +38,21 @@ const questions = [
     type: "input",
     message: "Provide instructions on how to test the application.",
   },
+  {
+    name: "license",
+    type: "list",
+    message: "Select a license to use",
+    choices: [
+      "Apache 2.0",
+      "BSD 3-Clause New or Revised license",
+      "BSD 2-Clause Simplified or FreeBSD license",
+      "GNU General Public License (GPL)",
+      "GNU Library or Lesser General Public License (LGPL)",
+      "MIT license",
+      "Mozilla Public License 2.0",
+      "Eclipse Public License version 1.0",
+    ],
+  },
   // {
   //   name: "sections",
   //   type: "checkbox",
@@ -46,16 +61,16 @@ const questions = [
   // },
 ];
 inquirer.prompt(questions).then(
-  ({ name, description, installation, usage, contribution, test }) => {
+  ({ name, description, installation, usage, contribution, test, license }) => {
     const contents = renderFile(
       name,
       description,
       installation,
       usage,
       contribution,
-      test
+      test,
+      license
     );
-    // console.log("answers :>>", answers);
     fs.writeFile("README.md", contents, (error) => {
       if (error) console.log(error);
     });
