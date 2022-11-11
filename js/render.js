@@ -391,9 +391,9 @@ ${usage}
 
 If you have any questions about this application send me an email or message on github.
 
-My email address is:  [${emailAddress}](mailto:${emailAddress})
+My email address is:  [${gitRepo}](mailto:${gitRepo})
 
-My repo URL is: [${gitRepo}](${gitRepo})
+My repo URL is: [${emailAddress}](${emailAddress})
 
 ## How to Contribute
 ${contribution}

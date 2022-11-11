@@ -23,9 +23,9 @@ Open the terminal in the "./js" folder and input "node index.js".  Then follow t
 
 If you have any questions about this application send me an email or message on github.
 
-My email address is:  [https://github.com/eljayman](mailto:https://github.com/eljayman)
+My email address is:  [lelandoj@gmail.com](mailto:lelandoj@gmail.com)
 
-My repo URL is: [lelandoj@gmail.com](lelandoj@gmail.com)
+My repo URL is: [https://github.com/eljayman](https://github.com/eljayman)
 
 ## How to Contribute
 If you would like to contribute to this project.  Please send a message to me via github.  My profile address is: https://github.com/eljayman.
