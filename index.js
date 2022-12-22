@@ -59,12 +59,6 @@ const questions = [
       "Eclipse Public License version 1.0",
     ],
   },
-  // {
-  //   name: "sections",
-  //   type: "checkbox",
-  //   message: "Select additional contents.",
-  //   choices: ["badges", "Features", "How to contribute", "Tests"],
-  // },
 ];
 inquirer.prompt(questions).then(
   ({

@@ -2,7 +2,6 @@ let badge;
 let licenseText;
 
 function handleLicense(license) {
-  console.log("invoke :>>", license);
   switch (license) {
     case license === "Apache 2.0"
       ? (badge = `
